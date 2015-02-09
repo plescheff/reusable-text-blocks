@@ -3,7 +3,7 @@ Contributors: halgatewood
 Donate link: http://halgatewood.com/text-blocks/
 Tags: content, block, reusable content, reusable text, widget, shortcode
 Requires at least: 3.5
-Tested up to: 3.8
+Tested up to: 4.1
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -12,7 +12,7 @@ Create reusable pieces of content that you can insert into themes, posts, pages 
 
 == Description ==
 
-This plugin creates a new 'text-blocks' custom post type with it's own section in the WordPress admin sidebar. It uses the standard WordPress user interface so you and your clients will know how to use it instantly. 
+This plugin creates a new 'text-blocks' custom post type with it's own section in the WordPress admin sidebar. It uses the standard WordPress user interface so you and your clients will know how to use it instantly.
 
 You can add it to your site in three ways:
 
@@ -62,7 +62,11 @@ or
 
 == Changelog ==
 
-= 1.4.4 = 
+= 1.4.5 =
+* Enabled revisions
+* Added filter: 'text_blocks_show_text_block_id'
+
+= 1.4.4 =
 * Fix for error if no content found
 
 = 1.4.3 =

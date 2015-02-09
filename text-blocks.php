@@ -5,7 +5,7 @@ Plugin URI: http://halgatewood.com/text-blocks
 Description: Blocks of content that can be used throughout the site in theme templates and widgets.
 Author: Hal Gatewood
 Author URI: http://www.halgatewood.com
-Version: 1.4.4
+Version: 1.4.5
 */
 
 /*
@@ -73,7 +73,7 @@ function create_text_block_type()
 					'hierarchical' 			=> false,
 					'menu_position' 		=> 26.4,
 					'exclude_from_search' 	=> true,
-					'supports' 				=> array( 'title', 'editor', 'thumbnail' )
+					'supports' 				=> array( 'title', 'editor', 'thumbnail', 'revisions' )
 					);
 
 	register_post_type( 'text-blocks', $args );
@@ -256,6 +256,8 @@ class TextBlocksWidget extends WP_Widget
 // SHOW TEXT BLOCK
 function show_text_block($id, $plain = false)
 {
+	$id = apply_filters('text_blocks_show_text_block_id', $id);
+
 	// IF ID IS NOT NUMERIC CHECK FOR SLUG
 	if(!is_numeric($id))
 	{
@@ -282,6 +284,3 @@ function text_blocks_shortcode($atts)
 	if($id) { return show_text_block($id, $plain); }
 	else { return false; }
 }
-
-
-?>
