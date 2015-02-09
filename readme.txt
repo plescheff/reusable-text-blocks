@@ -43,7 +43,7 @@ Widget: Included widget allows you to specify with block and insert a title if n
 Shortcode:
 `[text-blocks id="1"] or [text-blocks id="text_block_slug"]`
 
-`[text-blocks id="1" plain=1] or [text-blocks id="text_block_slug"" plain=1]`
+`[text-blocks id="1" plain=1] or [text-blocks id="text_block_slug" plain=1]`
 
 PHP Function: A PHP function has been setup so you do not have to use the do_shortcode function. Go straight to the source with the following.
 
@@ -65,6 +65,7 @@ or
 = 1.4.5 =
 * Enabled revisions
 * Added filter: 'text_blocks_show_text_block_id'
+* Tested on WordPress 4.1
 
 = 1.4.4 =
 * Fix for error if no content found
